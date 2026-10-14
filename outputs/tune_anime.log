@@ -1,0 +1,9 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791922228.521831   23472 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791922232.323892   23472 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+{'hidden': '512-512-1024', 'dropout': 0.8, 'refeed': True, 'l2': 0.0001, 'best_epoch': 6, 'val_mse': 3.7452005872288563, 'val_rmse': 1.9352520733043683, 'seconds': 433}
+{'hidden': '512-512-1024', 'dropout': 0.8, 'refeed': False, 'l2': 0.0001, 'best_epoch': 23, 'val_mse': 1.4112251682658068, 'val_rmse': 1.187949985591063, 'seconds': 485}
+{'hidden': '512-512-1024', 'dropout': 0.5, 'refeed': True, 'l2': 0.0001, 'best_epoch': 29, 'val_mse': 2.4891513675778683, 'val_rmse': 1.5777044614178755, 'seconds': 853}
+{'hidden': '512-512-1024', 'dropout': 0.5, 'refeed': False, 'l2': 0.0001, 'best_epoch': 33, 'val_mse': 1.3689995629310385, 'val_rmse': 1.1700425474875, 'seconds': 651}
+{'hidden': '256-256-512', 'dropout': 0.8, 'refeed': True, 'l2': 0.0001, 'best_epoch': 63, 'val_mse': 2.961827557772361, 'val_rmse': 1.72099609464181, 'seconds': 810}

@@ -1,0 +1,8 @@
+# Python virtual environment (recreate with: py -3.12 -m venv .venv)
+.venv/
+__pycache__/
+# Word/PowerPoint lock files
+~$*
+# 99 MB - too big for GitHub; download from
+# https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database
+data/rating.csv

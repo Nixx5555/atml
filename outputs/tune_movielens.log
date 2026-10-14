@@ -1,0 +1,53 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791921680.967246   26752 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791921685.682113   26752 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+{'hidden': '512-512-1024', 'dropout': 0.8, 'refeed': True, 'l2': 0.0, 'best_epoch': 33, 'val_mse': 1.0847972951786073, 'val_rmse': 1.0415360268270164, 'seconds': 22}
+{'hidden': '512-512-1024', 'dropout': 0.8, 'refeed': True, 'l2': 0.0001, 'best_epoch': 30, 'val_mse': 1.0665804751781056, 'val_rmse': 1.0327538308706996, 'seconds': 20}
+{'hidden': '512-512-1024', 'dropout': 0.8, 'refeed': False, 'l2': 0.0, 'best_epoch': 31, 'val_mse': 0.9379255680250351, 'val_rmse': 0.9684655740009736, 'seconds': 11}
+{'hidden': '512-512-1024', 'dropout': 0.8, 'refeed': False, 'l2': 0.0001, 'best_epoch': 31, 'val_mse': 0.9257971242850692, 'val_rmse': 0.9621835190259025, 'seconds': 13}
+{'hidden': '512-512-1024', 'dropout': 0.5, 'refeed': True, 'l2': 0.0, 'best_epoch': 18, 'val_mse': 1.1384757001931567, 'val_rmse': 1.066993767644946, 'seconds': 13}
+{'hidden': '512-512-1024', 'dropout': 0.5, 'refeed': True, 'l2': 0.0001, 'best_epoch': 16, 'val_mse': 1.135165225830323, 'val_rmse': 1.065441329135642, 'seconds': 14}
+{'hidden': '512-512-1024', 'dropout': 0.5, 'refeed': False, 'l2': 0.0, 'best_epoch': 13, 'val_mse': 1.0283659755669277, 'val_rmse': 1.0140838109184702, 'seconds': 7}
+{'hidden': '512-512-1024', 'dropout': 0.5, 'refeed': False, 'l2': 0.0001, 'best_epoch': 13, 'val_mse': 1.0020526822446318, 'val_rmse': 1.0010258149741353, 'seconds': 7}
+{'hidden': '512-512-1024', 'dropout': 0.2, 'refeed': True, 'l2': 0.0, 'best_epoch': 16, 'val_mse': 1.2505814691827213, 'val_rmse': 1.118293999439647, 'seconds': 12}
+{'hidden': '512-512-1024', 'dropout': 0.2, 'refeed': True, 'l2': 0.0001, 'best_epoch': 11, 'val_mse': 1.2135374531218643, 'val_rmse': 1.101606759747717, 'seconds': 13}
+{'hidden': '512-512-1024', 'dropout': 0.2, 'refeed': False, 'l2': 0.0, 'best_epoch': 10, 'val_mse': 1.1270885463701585, 'val_rmse': 1.0616442654534326, 'seconds': 7}
+{'hidden': '512-512-1024', 'dropout': 0.2, 'refeed': False, 'l2': 0.0001, 'best_epoch': 9, 'val_mse': 1.0618883500777645, 'val_rmse': 1.0304796699002676, 'seconds': 7}
+{'hidden': '256-256-512', 'dropout': 0.8, 'refeed': True, 'l2': 0.0, 'best_epoch': 39, 'val_mse': 0.9953306084437086, 'val_rmse': 0.9976625724380506, 'seconds': 11}
+{'hidden': '256-256-512', 'dropout': 0.8, 'refeed': True, 'l2': 0.0001, 'best_epoch': 39, 'val_mse': 1.0264226495083284, 'val_rmse': 1.0131251894550488, 'seconds': 11}
+{'hidden': '256-256-512', 'dropout': 0.8, 'refeed': False, 'l2': 0.0, 'best_epoch': 43, 'val_mse': 0.9232356810029099, 'val_rmse': 0.9608515395225788, 'seconds': 7}
+{'hidden': '256-256-512', 'dropout': 0.8, 'refeed': False, 'l2': 0.0001, 'best_epoch': 40, 'val_mse': 0.8839979759306642, 'val_rmse': 0.9402116654938207, 'seconds': 8}
+{'hidden': '256-256-512', 'dropout': 0.5, 'refeed': True, 'l2': 0.0, 'best_epoch': 26, 'val_mse': 1.06298779130293, 'val_rmse': 1.0310129927905516, 'seconds': 9}
+{'hidden': '256-256-512', 'dropout': 0.5, 'refeed': True, 'l2': 0.0001, 'best_epoch': 30, 'val_mse': 1.0383365944210314, 'val_rmse': 1.01898802467008, 'seconds': 10}
+{'hidden': '256-256-512', 'dropout': 0.5, 'refeed': False, 'l2': 0.0, 'best_epoch': 22, 'val_mse': 0.9479527267710215, 'val_rmse': 0.9736286390462339, 'seconds': 5}
+{'hidden': '256-256-512', 'dropout': 0.5, 'refeed': False, 'l2': 0.0001, 'best_epoch': 20, 'val_mse': 0.9066909523630343, 'val_rmse': 0.9522032095950078, 'seconds': 5}
+{'hidden': '256-256-512', 'dropout': 0.2, 'refeed': True, 'l2': 0.0, 'best_epoch': 22, 'val_mse': 1.2033997623168773, 'val_rmse': 1.0969957895620555, 'seconds': 8}
+{'hidden': '256-256-512', 'dropout': 0.2, 'refeed': True, 'l2': 0.0001, 'best_epoch': 22, 'val_mse': 1.1770227758754765, 'val_rmse': 1.0849068051567732, 'seconds': 8}
+{'hidden': '256-256-512', 'dropout': 0.2, 'refeed': False, 'l2': 0.0, 'best_epoch': 17, 'val_mse': 1.0278007726269316, 'val_rmse': 1.0138050959760123, 'seconds': 5}
+{'hidden': '256-256-512', 'dropout': 0.2, 'refeed': False, 'l2': 0.0001, 'best_epoch': 24, 'val_mse': 0.9962369125338651, 'val_rmse': 0.998116682825142, 'seconds': 6}
+{'hidden': '512', 'dropout': 0.8, 'refeed': True, 'l2': 0.0, 'best_epoch': 94, 'val_mse': 1.0384241969571544, 'val_rmse': 1.0190310088300327, 'seconds': 23}
+{'hidden': '512', 'dropout': 0.8, 'refeed': True, 'l2': 0.0001, 'best_epoch': 116, 'val_mse': 0.9866902938741722, 'val_rmse': 0.9933228548030958, 'seconds': 31}
+{'hidden': '512', 'dropout': 0.8, 'refeed': False, 'l2': 0.0, 'best_epoch': 69, 'val_mse': 0.9962263296771523, 'val_rmse': 0.9981113813984651, 'seconds': 11}
+{'hidden': '512', 'dropout': 0.8, 'refeed': False, 'l2': 0.0001, 'best_epoch': 73, 'val_mse': 0.9638552327914911, 'val_rmse': 0.9817612911454042, 'seconds': 18}
+{'hidden': '512', 'dropout': 0.5, 'refeed': True, 'l2': 0.0, 'best_epoch': 27, 'val_mse': 1.3513356545065724, 'val_rmse': 1.1624696359503643, 'seconds': 10}
+{'hidden': '512', 'dropout': 0.5, 'refeed': True, 'l2': 0.0001, 'best_epoch': 61, 'val_mse': 1.2470560060455549, 'val_rmse': 1.1167166185051403, 'seconds': 20}
+{'hidden': '512', 'dropout': 0.5, 'refeed': False, 'l2': 0.0, 'best_epoch': 57, 'val_mse': 1.093235163618804, 'val_rmse': 1.045578865327147, 'seconds': 13}
+{'hidden': '512', 'dropout': 0.5, 'refeed': False, 'l2': 0.0001, 'best_epoch': 57, 'val_mse': 1.0682958778597231, 'val_rmse': 1.033583996518775, 'seconds': 13}
+{'hidden': '512', 'dropout': 0.2, 'refeed': True, 'l2': 0.0, 'best_epoch': 10, 'val_mse': 1.4511298375413908, 'val_rmse': 1.2046285060305484, 'seconds': 8}
+{'hidden': '512', 'dropout': 0.2, 'refeed': True, 'l2': 0.0001, 'best_epoch': 10, 'val_mse': 1.445261741483544, 'val_rmse': 1.2021903931921698, 'seconds': 7}
+{'hidden': '512', 'dropout': 0.2, 'refeed': False, 'l2': 0.0, 'best_epoch': 12, 'val_mse': 1.2136179024307645, 'val_rmse': 1.101643273673817, 'seconds': 4}
+{'hidden': '512', 'dropout': 0.2, 'refeed': False, 'l2': 0.0001, 'best_epoch': 12, 'val_mse': 1.1953339596816677, 'val_rmse': 1.0933132943862285, 'seconds': 6}
+{'hidden': '256-128', 'dropout': 0.8, 'refeed': True, 'l2': 0.0, 'best_epoch': 101, 'val_mse': 0.8957408313265102, 'val_rmse': 0.9464358569530796, 'seconds': 19}
+{'hidden': '256-128', 'dropout': 0.8, 'refeed': True, 'l2': 0.0001, 'best_epoch': 130, 'val_mse': 0.871067488837046, 'val_rmse': 0.933309963965373, 'seconds': 28}
+{'hidden': '256-128', 'dropout': 0.8, 'refeed': False, 'l2': 0.0, 'best_epoch': 46, 'val_mse': 0.9765258519591612, 'val_rmse': 0.9881932260237171, 'seconds': 9}
+{'hidden': '256-128', 'dropout': 0.8, 'refeed': False, 'l2': 0.0001, 'best_epoch': 34, 'val_mse': 0.9814726515465081, 'val_rmse': 0.9906930157957651, 'seconds': 6}
+{'hidden': '256-128', 'dropout': 0.5, 'refeed': True, 'l2': 0.0, 'best_epoch': 35, 'val_mse': 1.0124406380129942, 'val_rmse': 1.0062010922340494, 'seconds': 8}
+{'hidden': '256-128', 'dropout': 0.5, 'refeed': True, 'l2': 0.0001, 'best_epoch': 44, 'val_mse': 1.017015077827112, 'val_rmse': 1.0084716544490044, 'seconds': 10}
+{'hidden': '256-128', 'dropout': 0.5, 'refeed': False, 'l2': 0.0, 'best_epoch': 41, 'val_mse': 0.916633154287076, 'val_rmse': 0.9574096063269242, 'seconds': 6}
+{'hidden': '256-128', 'dropout': 0.5, 'refeed': False, 'l2': 0.0001, 'best_epoch': 27, 'val_mse': 0.8969039656707807, 'val_rmse': 0.9470501389423797, 'seconds': 4}
+{'hidden': '256-128', 'dropout': 0.2, 'refeed': True, 'l2': 0.0, 'best_epoch': 28, 'val_mse': 1.2783216843517962, 'val_rmse': 1.1306288888719394, 'seconds': 7}
+{'hidden': '256-128', 'dropout': 0.2, 'refeed': True, 'l2': 0.0001, 'best_epoch': 31, 'val_mse': 1.1660489414007627, 'val_rmse': 1.0798374606396848, 'seconds': 8}
+{'hidden': '256-128', 'dropout': 0.2, 'refeed': False, 'l2': 0.0, 'best_epoch': 28, 'val_mse': 1.0314197176650612, 'val_rmse': 1.0155883603434324, 'seconds': 5}
+{'hidden': '256-128', 'dropout': 0.2, 'refeed': False, 'l2': 0.0001, 'best_epoch': 23, 'val_mse': 0.955900844120008, 'val_rmse': 0.977701817590623, 'seconds': 5}
+best: {'hidden': [256, 128], 'dropout': 0.8, 'refeed': True, 'l2': 0.0001}

@@ -1,0 +1,136 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791947026.383347   19008 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791947034.251905   19008 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+
+[E4] Anime (Kaggle), paper protocol
+[E4/RikoNet AE (tuned on validation)/seed42] epoch   1  train MSE 5.2272  val MSE 2.3018
+[E4/RikoNet AE (tuned on validation)/seed42] epoch   5  train MSE 1.6508  val MSE 1.5927
+[E4/RikoNet AE (tuned on validation)/seed42] epoch  10  train MSE 1.4059  val MSE 1.4368
+[E4/RikoNet AE (tuned on validation)/seed42] epoch  15  train MSE 1.3165  val MSE 1.3913
+[E4/RikoNet AE (tuned on validation)/seed42] epoch  20  train MSE 1.2635  val MSE 1.3983
+[E4/RikoNet AE (tuned on validation)/seed42] early stop at epoch 22; best val MSE 1.3862
+  RikoNet AE (tuned on validation) seed 42: RMSE 1.1736  MAE 0.8924
+  Global average: RMSE 1.5660  (0s)
+  User average: RMSE 1.3576  (1s)
+  Item average: RMSE 1.4279  (1s)
+  Bias baseline (mu+b_u+b_i): RMSE 1.1836  (2s)
+  User KNN (cosine, k=40): RMSE 1.1978  (46s)
+  Item KNN (cosine, k=40): RMSE 1.0664  (16s)
+  Biased MF (ALS, f=32): RMSE 1.1000  (39s)
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+-> outputs/results.json updated (12.9 min)
+
+[E5] embeddings
+[embed] top raters m = 1025 (users with > 500 ratings)
+[embed-1] epoch   1  train MSE 9.8056  val MSE 2.9911
+[embed-1] epoch   5  train MSE 2.4905  val MSE 2.2860
+[embed-1] epoch  10  train MSE 1.8495  val MSE 1.8244
+[embed-1] epoch  15  train MSE 1.7594  val MSE 1.7244
+[embed-1] epoch  20  train MSE 1.4903  val MSE 1.5316
+[embed-1] epoch  25  train MSE 1.2792  val MSE 1.3517
+[embed-1] epoch  30  train MSE 1.1991  val MSE 1.3080
+[embed-1] epoch  35  train MSE 1.1709  val MSE 1.2930
+[embed-1] epoch  40  train MSE 1.0517  val MSE 1.1886
+[embed-1] epoch  45  train MSE 0.9675  val MSE 1.1759
+[embed-1] epoch  50  train MSE 0.9419  val MSE 1.1583
+[embed-1] epoch  55  train MSE 0.9249  val MSE 1.1710
+[embed-1] epoch  60  train MSE 0.9018  val MSE 1.1494
+[embed-1] early stop at epoch 61; best val MSE 1.1476
+[embed-3] epoch   1  train MSE 0.5357
+[embed-3] epoch   5  train MSE 0.0847
+[embed-3] epoch  10  train MSE 0.0439
+[embed-3] epoch  15  train MSE 0.0310
+[embed-3] epoch  20  train MSE 0.0263
+[embed-3] epoch  25  train MSE 0.0238
+[embed-3] epoch  30  train MSE 0.0225
+[embed-3] epoch  35  train MSE 0.0217
+[embed-3] epoch  40  train MSE 0.0211
+[embed-3] epoch  45  train MSE 0.0207
+[embed-3] epoch  50  train MSE 0.0203
+[embed-3] epoch  55  train MSE 0.0202
+[embed-3] epoch  60  train MSE 0.0199
+[embed-3] epoch  65  train MSE 0.0198
+[embed-3] epoch  70  train MSE 0.0197
+[embed-3] epoch  75  train MSE 0.0196
+[embed-3] epoch  80  train MSE 0.0196
+[embed-3] epoch  85  train MSE 0.0195
+[embed-3] epoch  90  train MSE 0.0196
+[embed-3] epoch  95  train MSE 0.0194
+[embed-3] epoch 100  train MSE 0.0193
+[embed-3] epoch 105  train MSE 0.0194
+[embed-3] epoch 110  train MSE 0.0193
+[embed-3] epoch 115  train MSE 0.0192
+[embed-3] epoch 120  train MSE 0.0192
+[embed-3] epoch 125  train MSE 0.0191
+[embed-3] epoch 130  train MSE 0.0191
+[embed-3] epoch 135  train MSE 0.0191
+[embed-3] epoch 140  train MSE 0.0190
+[embed-3] epoch 145  train MSE 0.0191
+[embed-3] epoch 150  train MSE 0.0189
+[E5] self-tuning table (paper Table 1 analogue)
+[table1] K= 1  best c = [2, 7, 4]   connected components = 1195
+[table1] K= 2  best c = [47, 50, 64]   connected components = 47
+[table1] K= 3  best c = [9, 37, 15]   connected components = 9
+[table1] K= 4  best c = [26, 40, 35]   connected components = 1
+[table1] K= 5  best c = [47, 28, 32]   connected components = 1
+[table1] K= 7  best c = [20, 17, 5]   connected components = 1
+[table1] K=10  best c = [14, 10, 5]   connected components = 1
+[table1] K=15  best c = [9, 4, 24]   connected components = 1
+[E5] spectral clustering
+C:\Users\dell\AppData\Roaming\Claude\scratch-workspaces\2f96c23f-a782-444b-9031-50f14edb3287\b7b254d6-87ec-4135-ac48-bdbb675e917f\scratch-2026-10-13-beff46\RikoNet_ATML\.venv\Lib\site-packages\sklearn\manifold\_spectral_embedding.py:325: UserWarning: Graph is not fully connected, spectral embedding may not work as expected.
+  warnings.warn(
+[E5] logically opposite clusters (Algorithm 1)
+{
+ "n_clusters": 222,
+ "n_neighbors": 4,
+ "seconds": 11,
+ "top_users_m": 1025,
+ "embedding_dim": 64,
+ "size_min": 4,
+ "size_median": 20.0,
+ "size_max": 224,
+ "empty_clusters": 0,
+ "clusters_below_4": 0,
+ "silhouette_spectral": -0.006940152496099472,
+ "silhouette_kmeans": 0.033690497279167175,
+ "genre_jaccard_within_spectral": 0.29383835196495056,
+ "genre_jaccard_within_kmeans": 0.271962970495224,
+ "genre_jaccard_random_pairs": 0.10591746121644974,
+ "genre_jaccard_title_vs_opposite": 0.03407987207174301,
+ "genre_jaccard_title_vs_random": 0.10623983293771744,
+ "opposite_cluster_equals_own": 0.00029994001199760045
+}
+[E5] hybrid filter evaluation
+{
+ "Autoencoder top-10 (no filter)": {
+  "Precision@10": 0.011332717759310558,
+  "Recall@10": 0.018684298363163564,
+  "HitRate@10": 0.10058479532163743,
+  "users": 16245,
+  "genre_jaccard_to_context": 0.12961481469097152
+ },
+ "Hybrid: Similar Anime": {
+  "Precision@10": 0.019636811326562018,
+  "Recall@10": 0.029112611977078724,
+  "HitRate@10": 0.1716220375500154,
+  "users": 16245,
+  "genre_jaccard_to_context": 0.16085540955852135,
+  "mean_list_length": 9.99661434287473,
+  "mean_candidate_set_C": 121.44973838104032
+ },
+ "Hybrid: Anime You May Like": {
+  "Precision@10": 0.010864881502000616,
+  "Recall@10": 0.017810334290410294,
+  "HitRate@10": 0.09695290858725762,
+  "users": 16245,
+  "genre_jaccard_to_context": 0.1286698048593228
+ },
+ "Hybrid: both lists (20 titles)": {
+  "Precision@20": 0.015250846414281318,
+  "Recall@20": 0.04692294626748902,
+  "HitRate@20": 0.2505386272699292,
+  "users": 16245
+ }
+}
+-> outputs/results.json updated (18.3 min)

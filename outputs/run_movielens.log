@@ -1,0 +1,228 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791946721.207692   22560 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791946735.600202   22560 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+
+[E1] MovieLens-100K, paper protocol (5 % held-out per user)
+[E1/RikoNet AE (tuned on validation)/seed42] epoch   1  train MSE 8.1599  val MSE 3.9916
+[E1/RikoNet AE (tuned on validation)/seed42] epoch   5  train MSE 2.3463  val MSE 1.6426
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  10  train MSE 1.4976  val MSE 1.3166
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  15  train MSE 1.2065  val MSE 1.2230
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  20  train MSE 1.0928  val MSE 1.2433
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  25  train MSE 1.0186  val MSE 1.1226
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  30  train MSE 1.0159  val MSE 1.2237
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  35  train MSE 0.9293  val MSE 1.0501
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  40  train MSE 0.9029  val MSE 1.0191
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  45  train MSE 0.8760  val MSE 0.9951
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  50  train MSE 0.8595  val MSE 0.9630
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  55  train MSE 0.8702  val MSE 0.9641
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  60  train MSE 0.8205  val MSE 0.9207
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  65  train MSE 0.8105  val MSE 0.9237
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  70  train MSE 0.8167  val MSE 0.9100
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  75  train MSE 0.7764  val MSE 0.8967
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  80  train MSE 0.7718  val MSE 0.8953
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  85  train MSE 0.7556  val MSE 0.9031
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  90  train MSE 0.7565  val MSE 0.8970
+[E1/RikoNet AE (tuned on validation)/seed42] epoch  95  train MSE 0.7387  val MSE 0.8924
+[E1/RikoNet AE (tuned on validation)/seed42] epoch 100  train MSE 0.7561  val MSE 0.8870
+[E1/RikoNet AE (tuned on validation)/seed42] epoch 105  train MSE 0.7519  val MSE 0.8827
+[E1/RikoNet AE (tuned on validation)/seed42] epoch 110  train MSE 0.7388  val MSE 0.8799
+[E1/RikoNet AE (tuned on validation)/seed42] epoch 115  train MSE 0.7255  val MSE 0.8749
+[E1/RikoNet AE (tuned on validation)/seed42] epoch 120  train MSE 0.7279  val MSE 0.8801
+[E1/RikoNet AE (tuned on validation)/seed42] epoch 125  train MSE 0.7047  val MSE 0.8844
+[E1/RikoNet AE (tuned on validation)/seed42] early stop at epoch 128; best val MSE 0.8747
+  RikoNet AE (tuned on validation) seed 42: RMSE 0.9440  MAE 0.7444
+[E1/RikoNet AE (tuned on validation)/seed43] epoch   1  train MSE 8.2447  val MSE 3.8636
+[E1/RikoNet AE (tuned on validation)/seed43] epoch   5  train MSE 2.0672  val MSE 1.5174
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  10  train MSE 1.4098  val MSE 1.3346
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  15  train MSE 1.1716  val MSE 1.1644
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  20  train MSE 1.0875  val MSE 1.2374
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  25  train MSE 1.0358  val MSE 1.1504
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  30  train MSE 0.9585  val MSE 1.1740
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  35  train MSE 0.9275  val MSE 1.1043
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  40  train MSE 0.9165  val MSE 1.0177
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  45  train MSE 0.8756  val MSE 1.0334
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  50  train MSE 0.8604  val MSE 0.9910
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  55  train MSE 0.8492  val MSE 0.9655
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  60  train MSE 0.8183  val MSE 0.9546
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  65  train MSE 0.8000  val MSE 0.9408
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  70  train MSE 0.7884  val MSE 0.9508
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  75  train MSE 0.7732  val MSE 0.9223
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  80  train MSE 0.7837  val MSE 0.9283
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  85  train MSE 0.7454  val MSE 0.9096
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  90  train MSE 0.7528  val MSE 0.9038
+[E1/RikoNet AE (tuned on validation)/seed43] epoch  95  train MSE 0.8038  val MSE 0.9422
+[E1/RikoNet AE (tuned on validation)/seed43] epoch 100  train MSE 0.7613  val MSE 0.9230
+[E1/RikoNet AE (tuned on validation)/seed43] epoch 105  train MSE 0.7512  val MSE 0.9118
+[E1/RikoNet AE (tuned on validation)/seed43] early stop at epoch 109; best val MSE 0.9016
+  RikoNet AE (tuned on validation) seed 43: RMSE 0.9424  MAE 0.7408
+[E1/RikoNet AE (tuned on validation)/seed44] epoch   1  train MSE 8.2900  val MSE 3.9219
+[E1/RikoNet AE (tuned on validation)/seed44] epoch   5  train MSE 2.2572  val MSE 1.6601
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  10  train MSE 1.4589  val MSE 1.3684
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  15  train MSE 1.2054  val MSE 1.3040
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  20  train MSE 1.0887  val MSE 1.1933
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  25  train MSE 1.0093  val MSE 1.1508
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  30  train MSE 0.9690  val MSE 1.1435
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  35  train MSE 0.9252  val MSE 1.0748
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  40  train MSE 0.8801  val MSE 1.0014
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  45  train MSE 0.8757  val MSE 1.0463
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  50  train MSE 0.8379  val MSE 0.9605
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  55  train MSE 0.8243  val MSE 0.9417
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  60  train MSE 0.8056  val MSE 0.9355
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  65  train MSE 0.7814  val MSE 0.9263
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  70  train MSE 0.7657  val MSE 0.9150
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  75  train MSE 0.7561  val MSE 0.9132
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  80  train MSE 0.7503  val MSE 0.9151
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  85  train MSE 0.7863  val MSE 0.9108
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  90  train MSE 0.7366  val MSE 0.9065
+[E1/RikoNet AE (tuned on validation)/seed44] epoch  95  train MSE 0.7457  val MSE 0.8886
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 100  train MSE 0.7323  val MSE 0.8956
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 105  train MSE 0.7294  val MSE 0.9055
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 110  train MSE 0.7145  val MSE 0.8929
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 115  train MSE 0.7148  val MSE 0.8945
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 120  train MSE 0.7056  val MSE 0.8845
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 125  train MSE 0.7016  val MSE 0.8868
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 130  train MSE 0.6979  val MSE 0.8957
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 135  train MSE 0.6886  val MSE 0.8856
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 140  train MSE 0.6874  val MSE 0.8846
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 145  train MSE 0.7150  val MSE 0.8985
+[E1/RikoNet AE (tuned on validation)/seed44] epoch 150  train MSE 0.6889  val MSE 0.8904
+[E1/RikoNet AE (tuned on validation)/seed44] early stop at epoch 153; best val MSE 0.8809
+  RikoNet AE (tuned on validation) seed 44: RMSE 0.9397  MAE 0.7401
+[E1/RikoNet AE (K&G default config)/seed42] epoch   1  train MSE 6.4123  val MSE 3.5749
+[E1/RikoNet AE (K&G default config)/seed42] epoch   5  train MSE 1.4719  val MSE 1.3662
+[E1/RikoNet AE (K&G default config)/seed42] epoch  10  train MSE 1.1881  val MSE 1.2362
+[E1/RikoNet AE (K&G default config)/seed42] epoch  15  train MSE 1.0557  val MSE 1.1922
+[E1/RikoNet AE (K&G default config)/seed42] epoch  20  train MSE 0.9581  val MSE 1.1307
+[E1/RikoNet AE (K&G default config)/seed42] epoch  25  train MSE 0.8878  val MSE 1.1343
+[E1/RikoNet AE (K&G default config)/seed42] epoch  30  train MSE 0.8280  val MSE 1.1164
+[E1/RikoNet AE (K&G default config)/seed42] epoch  35  train MSE 0.7787  val MSE 1.0956
+[E1/RikoNet AE (K&G default config)/seed42] epoch  40  train MSE 0.7293  val MSE 1.1482
+[E1/RikoNet AE (K&G default config)/seed42] epoch  45  train MSE 0.7033  val MSE 1.1776
+[E1/RikoNet AE (K&G default config)/seed42] epoch  50  train MSE 0.6403  val MSE 1.1806
+[E1/RikoNet AE (K&G default config)/seed42] early stop at epoch 50; best val MSE 1.0956
+  RikoNet AE (K&G default config) seed 42: RMSE 0.9985  MAE 0.7812
+[E1/RikoNet AE (K&G default config)/seed43] epoch   1  train MSE 6.2987  val MSE 3.0645
+[E1/RikoNet AE (K&G default config)/seed43] epoch   5  train MSE 1.4793  val MSE 1.5086
+[E1/RikoNet AE (K&G default config)/seed43] epoch  10  train MSE 1.1963  val MSE 1.2662
+[E1/RikoNet AE (K&G default config)/seed43] epoch  15  train MSE 1.0548  val MSE 1.2059
+[E1/RikoNet AE (K&G default config)/seed43] epoch  20  train MSE 1.0026  val MSE 1.1672
+[E1/RikoNet AE (K&G default config)/seed43] epoch  25  train MSE 0.9264  val MSE 1.1171
+[E1/RikoNet AE (K&G default config)/seed43] epoch  30  train MSE 0.8473  val MSE 1.1159
+[E1/RikoNet AE (K&G default config)/seed43] epoch  35  train MSE 0.8092  val MSE 1.1446
+[E1/RikoNet AE (K&G default config)/seed43] epoch  40  train MSE 0.7569  val MSE 1.1574
+[E1/RikoNet AE (K&G default config)/seed43] epoch  45  train MSE 0.7144  val MSE 1.1675
+[E1/RikoNet AE (K&G default config)/seed43] early stop at epoch 45; best val MSE 1.1159
+  RikoNet AE (K&G default config) seed 43: RMSE 1.0012  MAE 0.7848
+[E1/RikoNet AE (K&G default config)/seed44] epoch   1  train MSE 6.2627  val MSE 2.6715
+[E1/RikoNet AE (K&G default config)/seed44] epoch   5  train MSE 1.4512  val MSE 1.4313
+[E1/RikoNet AE (K&G default config)/seed44] epoch  10  train MSE 1.1920  val MSE 1.2537
+[E1/RikoNet AE (K&G default config)/seed44] epoch  15  train MSE 1.0916  val MSE 1.1891
+[E1/RikoNet AE (K&G default config)/seed44] epoch  20  train MSE 0.9993  val MSE 1.1374
+[E1/RikoNet AE (K&G default config)/seed44] epoch  25  train MSE 0.9137  val MSE 1.1186
+[E1/RikoNet AE (K&G default config)/seed44] epoch  30  train MSE 0.8458  val MSE 1.0705
+[E1/RikoNet AE (K&G default config)/seed44] epoch  35  train MSE 0.7899  val MSE 1.0892
+[E1/RikoNet AE (K&G default config)/seed44] epoch  40  train MSE 0.7361  val MSE 1.1032
+[E1/RikoNet AE (K&G default config)/seed44] epoch  45  train MSE 0.7056  val MSE 1.1516
+[E1/RikoNet AE (K&G default config)/seed44] early stop at epoch 45; best val MSE 1.0705
+  RikoNet AE (K&G default config) seed 44: RMSE 0.9964  MAE 0.7753
+  Global average: RMSE 1.1267  (0s)
+  User average: RMSE 1.0418  (0s)
+  Item average: RMSE 1.0339  (0s)
+  Bias baseline (mu+b_u+b_i): RMSE 0.9506  (0s)
+  User KNN (cosine, k=40): RMSE 0.9835  (0s)
+  Item KNN (cosine, k=40): RMSE 0.9663  (0s)
+  Biased MF (ALS, f=32): RMSE 0.9424  (1s)
+
+[E2] MovieLens-100K, 80/20 protocol
+[E2/RikoNet AE (tuned on validation)/seed42] epoch   1  train MSE 8.4401  val MSE 4.3724
+[E2/RikoNet AE (tuned on validation)/seed42] epoch   5  train MSE 2.4438  val MSE 1.8148
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  10  train MSE 1.5456  val MSE 1.4778
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  15  train MSE 1.2210  val MSE 1.2853
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  20  train MSE 1.0954  val MSE 1.2347
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  25  train MSE 1.0270  val MSE 1.1681
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  30  train MSE 0.9575  val MSE 1.0620
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  35  train MSE 0.9086  val MSE 1.0583
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  40  train MSE 0.8748  val MSE 1.0159
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  45  train MSE 0.8508  val MSE 0.9737
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  50  train MSE 0.8205  val MSE 0.9589
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  55  train MSE 0.8200  val MSE 0.9592
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  60  train MSE 0.7949  val MSE 0.9414
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  65  train MSE 0.7819  val MSE 0.9558
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  70  train MSE 0.7631  val MSE 0.9653
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  75  train MSE 0.7505  val MSE 0.9269
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  80  train MSE 0.7449  val MSE 0.9178
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  85  train MSE 0.7317  val MSE 0.9127
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  90  train MSE 0.7362  val MSE 0.9149
+[E2/RikoNet AE (tuned on validation)/seed42] epoch  95  train MSE 0.7220  val MSE 0.9263
+[E2/RikoNet AE (tuned on validation)/seed42] epoch 100  train MSE 0.7311  val MSE 0.9185
+[E2/RikoNet AE (tuned on validation)/seed42] early stop at epoch 102; best val MSE 0.9048
+  RikoNet AE (tuned on validation) seed 42: RMSE 0.9478  MAE 0.7465
+[E2/RikoNet AE (tuned on validation)/seed43] epoch   1  train MSE 8.4526  val MSE 4.1089
+[E2/RikoNet AE (tuned on validation)/seed43] epoch   5  train MSE 2.1788  val MSE 1.5805
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  10  train MSE 1.4630  val MSE 1.4592
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  15  train MSE 1.1870  val MSE 1.3064
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  20  train MSE 1.0690  val MSE 1.2795
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  25  train MSE 1.0004  val MSE 1.1589
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  30  train MSE 0.9396  val MSE 1.1460
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  35  train MSE 0.8947  val MSE 1.0672
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  40  train MSE 0.8601  val MSE 1.0158
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  45  train MSE 0.8665  val MSE 1.0535
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  50  train MSE 0.8534  val MSE 1.0288
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  55  train MSE 0.8161  val MSE 0.9949
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  60  train MSE 0.8027  val MSE 0.9846
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  65  train MSE 0.8122  val MSE 0.9801
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  70  train MSE 0.7659  val MSE 0.9597
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  75  train MSE 0.7568  val MSE 0.9452
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  80  train MSE 0.7766  val MSE 0.9616
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  85  train MSE 0.7237  val MSE 0.9411
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  90  train MSE 0.7283  val MSE 0.9479
+[E2/RikoNet AE (tuned on validation)/seed43] epoch  95  train MSE 0.7304  val MSE 0.9433
+[E2/RikoNet AE (tuned on validation)/seed43] epoch 100  train MSE 0.7236  val MSE 0.9312
+[E2/RikoNet AE (tuned on validation)/seed43] epoch 105  train MSE 0.7141  val MSE 0.9252
+[E2/RikoNet AE (tuned on validation)/seed43] epoch 110  train MSE 0.6980  val MSE 0.9295
+[E2/RikoNet AE (tuned on validation)/seed43] epoch 115  train MSE 0.7285  val MSE 0.9435
+[E2/RikoNet AE (tuned on validation)/seed43] epoch 120  train MSE 0.7069  val MSE 0.9263
+[E2/RikoNet AE (tuned on validation)/seed43] early stop at epoch 120; best val MSE 0.9252
+  RikoNet AE (tuned on validation) seed 43: RMSE 0.9478  MAE 0.7465
+[E2/RikoNet AE (tuned on validation)/seed44] epoch   1  train MSE 8.4661  val MSE 4.0056
+[E2/RikoNet AE (tuned on validation)/seed44] epoch   5  train MSE 2.3762  val MSE 1.7296
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  10  train MSE 1.4857  val MSE 1.3239
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  15  train MSE 1.2253  val MSE 1.3050
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  20  train MSE 1.1162  val MSE 1.3727
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  25  train MSE 1.0146  val MSE 1.1945
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  30  train MSE 0.9453  val MSE 1.1468
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  35  train MSE 0.9041  val MSE 1.0860
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  40  train MSE 0.9140  val MSE 1.0922
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  45  train MSE 0.8671  val MSE 1.0244
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  50  train MSE 0.8336  val MSE 0.9919
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  55  train MSE 0.8180  val MSE 0.9505
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  60  train MSE 0.7939  val MSE 0.9502
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  65  train MSE 0.7613  val MSE 0.9455
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  70  train MSE 0.7669  val MSE 0.9277
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  75  train MSE 0.7825  val MSE 0.9327
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  80  train MSE 0.7291  val MSE 0.9204
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  85  train MSE 0.7503  val MSE 0.9162
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  90  train MSE 0.7155  val MSE 0.9167
+[E2/RikoNet AE (tuned on validation)/seed44] epoch  95  train MSE 0.7307  val MSE 0.9215
+[E2/RikoNet AE (tuned on validation)/seed44] epoch 100  train MSE 0.7284  val MSE 0.9154
+[E2/RikoNet AE (tuned on validation)/seed44] epoch 105  train MSE 0.7129  val MSE 0.9100
+[E2/RikoNet AE (tuned on validation)/seed44] epoch 110  train MSE 0.7111  val MSE 0.9200
+[E2/RikoNet AE (tuned on validation)/seed44] epoch 115  train MSE 0.6917  val MSE 0.9150
+[E2/RikoNet AE (tuned on validation)/seed44] epoch 120  train MSE 0.6822  val MSE 0.9151
+[E2/RikoNet AE (tuned on validation)/seed44] early stop at epoch 122; best val MSE 0.9070
+  RikoNet AE (tuned on validation) seed 44: RMSE 0.9455  MAE 0.7446
+  Global average: RMSE 1.1201  (0s)
+  User average: RMSE 1.0388  (0s)
+  Item average: RMSE 1.0275  (0s)
+  Bias baseline (mu+b_u+b_i): RMSE 0.9448  (0s)
+  User KNN (cosine, k=40): RMSE 0.9997  (0s)
+  Item KNN (cosine, k=40): RMSE 0.9870  (0s)
+  Biased MF (ALS, f=32): RMSE 0.9298  (2s)
+
+[E3] activation study, MovieLens
+  activation relu : best val MSE 2.8833
+  activation tanh : best val MSE 1.1140
+  activation elu  : best val MSE 1.2292
+  activation selu : best val MSE 1.0133
+-> outputs/results.json updated (4.5 min)

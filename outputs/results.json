@@ -1,0 +1,777 @@
+{
+  "config": {
+    "ROOT": "C:\\Users\\dell\\AppData\\Local\\Packages\\Claude_pzs8sxrjxfjjc\\LocalCache\\Roaming\\Claude\\scratch-workspaces\\2f96c23f-a782-444b-9031-50f14edb3287\\b7b254d6-87ec-4135-ac48-bdbb675e917f\\scratch-2026-10-13-beff46\\RikoNet_ATML",
+    "SEED": 42,
+    "N_USERS_ANIME": 16384,
+    "N_ANIME": 6668,
+    "TEST_FRACTION": 0.05,
+    "VAL_FRACTION": 0.05,
+    "STANDARD_TEST_FRACTION": 0.2,
+    "HIDDEN": [
+      512,
+      512,
+      1024
+    ],
+    "ACTIVATION": "selu",
+    "FINAL_ACTIVATION": "relu",
+    "DROPOUT": 0.8,
+    "DENSE_REFEEDING": true,
+    "LEARNING_RATE": 0.001,
+    "BATCH_SIZE": 128,
+    "MAX_EPOCHS": 200,
+    "PATIENCE": 15,
+    "ACTIVATIONS_TO_COMPARE": [
+      "relu",
+      "tanh",
+      "elu",
+      "selu"
+    ],
+    "ACTIVATION_STUDY_EPOCHS": 40,
+    "TOP_USER_MIN_RATINGS": 500,
+    "EMB_HIDDEN": [
+      256,
+      128,
+      64
+    ],
+    "EMB_DIM": 64,
+    "HYBRID_HIDDEN": [
+      96,
+      64
+    ],
+    "N_CLUSTERS": 222,
+    "MIN_CLUSTER_ELEMS": 4,
+    "SELF_TUNING_RANGE": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "EPSILON": 1e-09,
+    "LAST_N_RATED": 3,
+    "LIKE_THRESHOLD_ANIME": 7,
+    "TOP_K": 10,
+    "RELEVANT_ANIME": 8,
+    "RELEVANT_MOVIELENS": 4,
+    "movielens_tuned": {
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.8,
+      "refeed": true,
+      "l2": 0.0001
+    },
+    "anime_tuned": {
+      "hidden": [
+        512,
+        512,
+        1024
+      ],
+      "dropout": 0.5,
+      "refeed": false,
+      "l2": 0.0001
+    }
+  },
+  "movielens_stats": {
+    "users": 943,
+    "items": 1682,
+    "ratings": 100000,
+    "density": 0.06304669364224531
+  },
+  "E1": {
+    "rating": [
+      {
+        "model": "RikoNet AE (tuned on validation)",
+        "config": "{\"hidden\": [256, 128], \"dropout\": 0.8, \"refeed\": true, \"l2\": 0.0001}",
+        "MSE": 0.8874272704124451,
+        "MSE_std": 0.003361810301369182,
+        "RMSE": 0.942031891508706,
+        "RMSE_std": 0.001784878980358849,
+        "MAE": 0.7417901754379272,
+        "MAE_std": 0.0018993341597058986,
+        "runs": 3,
+        "best_epoch": 115.0
+      },
+      {
+        "model": "RikoNet AE (K&G default config)",
+        "config": "{\"hidden\": [512, 512, 1024], \"dropout\": 0.8, \"refeed\": true, \"l2\": 0.0}",
+        "MSE": 0.9973851839701334,
+        "MSE_std": 0.0038826303053402953,
+        "RMSE": 0.9986898449333049,
+        "RMSE_std": 0.0019436041841742737,
+        "MAE": 0.780442992846171,
+        "MAE_std": 0.003910991413726504,
+        "runs": 3,
+        "best_epoch": 31.666666666666668
+      },
+      {
+        "model": "Global average",
+        "config": NaN,
+        "MSE": 1.2694569826126099,
+        "MSE_std": NaN,
+        "RMSE": 1.1267018161930022,
+        "RMSE_std": NaN,
+        "MAE": 0.9514105916023254,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "User average",
+        "config": NaN,
+        "MSE": 1.0853476524353027,
+        "MSE_std": NaN,
+        "RMSE": 1.0418001979435898,
+        "RMSE_std": NaN,
+        "MAE": 0.8386386632919312,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Item average",
+        "config": NaN,
+        "MSE": 1.068864107131958,
+        "MSE_std": NaN,
+        "RMSE": 1.0338588429432511,
+        "RMSE_std": NaN,
+        "MAE": 0.8274735808372498,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Bias baseline (mu+b_u+b_i)",
+        "config": NaN,
+        "MSE": 0.9035458564758301,
+        "MSE_std": NaN,
+        "RMSE": 0.9505502913974778,
+        "RMSE_std": NaN,
+        "MAE": 0.756040096282959,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "User KNN (cosine, k=40)",
+        "config": NaN,
+        "MSE": 0.967195987701416,
+        "MSE_std": NaN,
+        "RMSE": 0.9834612283671461,
+        "RMSE_std": NaN,
+        "MAE": 0.7693057060241699,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Item KNN (cosine, k=40)",
+        "config": NaN,
+        "MSE": 0.9336699843406677,
+        "MSE_std": NaN,
+        "RMSE": 0.9662660008199956,
+        "RMSE_std": NaN,
+        "MAE": 0.7486407160758972,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Biased MF (ALS, f=32)",
+        "config": NaN,
+        "MSE": 0.8880670666694641,
+        "MSE_std": NaN,
+        "RMSE": 0.9423731037489684,
+        "RMSE_std": NaN,
+        "MAE": 0.7407820224761963,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      }
+    ],
+    "ranking": [
+      {
+        "model": "RikoNet AE (tuned on validation)",
+        "Precision@10": 0.013210633946830266,
+        "Recall@10": 0.03834616417438503,
+        "NDCG@10": 0.023066249609334483,
+        "HitRate@10": 0.12106339468302658,
+        "Coverage": 0.1403091557669441,
+        "users": 815.0
+      },
+      {
+        "model": "RikoNet AE (K&G default config)",
+        "Precision@10": 0.01717791411042945,
+        "Recall@10": 0.04641265914272049,
+        "NDCG@10": 0.031251821828711675,
+        "HitRate@10": 0.15132924335378325,
+        "Coverage": 0.181529924692826,
+        "users": 815.0
+      },
+      {
+        "model": "Global average",
+        "Precision@10": 0.004294478527607362,
+        "Recall@10": 0.012572349259465822,
+        "NDCG@10": 0.006771527196109817,
+        "HitRate@10": 0.04049079754601227,
+        "Coverage": 0.20689655172413793,
+        "users": 815.0
+      },
+      {
+        "model": "User average",
+        "Precision@10": 0.004294478527607362,
+        "Recall@10": 0.012572349259465822,
+        "NDCG@10": 0.006771527196109817,
+        "HitRate@10": 0.04049079754601227,
+        "Coverage": 0.20689655172413793,
+        "users": 815.0
+      },
+      {
+        "model": "Item average",
+        "Precision@10": 0.0,
+        "Recall@10": 0.0,
+        "NDCG@10": 0.0,
+        "HitRate@10": 0.0,
+        "Coverage": 0.0089179548156956,
+        "users": 815.0
+      },
+      {
+        "model": "Bias baseline (mu+b_u+b_i)",
+        "Precision@10": 0.02650306748466258,
+        "Recall@10": 0.06605962885103989,
+        "NDCG@10": 0.043383605123259186,
+        "HitRate@10": 0.21717791411042944,
+        "Coverage": 0.03329369797859691,
+        "users": 815.0
+      },
+      {
+        "model": "User KNN (cosine, k=40)",
+        "Precision@10": 0.0028220858895705524,
+        "Recall@10": 0.007168632322006555,
+        "NDCG@10": 0.004329884016623206,
+        "HitRate@10": 0.02822085889570552,
+        "Coverage": 0.4589774078478002,
+        "users": 815.0
+      },
+      {
+        "model": "Item KNN (cosine, k=40)",
+        "Precision@10": 0.0098159509202454,
+        "Recall@10": 0.0328401012756841,
+        "NDCG@10": 0.018921130177141827,
+        "HitRate@10": 0.09447852760736196,
+        "Coverage": 0.6165279429250892,
+        "users": 815.0
+      },
+      {
+        "model": "Biased MF (ALS, f=32)",
+        "Precision@10": 0.03460122699386503,
+        "Recall@10": 0.08557957380043268,
+        "NDCG@10": 0.06469406400249458,
+        "HitRate@10": 0.26134969325153373,
+        "Coverage": 0.17479191438763378,
+        "users": 815.0
+      },
+      {
+        "model": "Most popular",
+        "Precision@10": 0.04503067484662577,
+        "Recall@10": 0.14154415795520087,
+        "NDCG@10": 0.10555819323048132,
+        "HitRate@10": 0.34846625766871164,
+        "Coverage": 0.04518430439952437,
+        "users": 815.0
+      },
+      {
+        "model": "Random",
+        "Precision@10": 0.0029447852760736202,
+        "Recall@10": 0.00991284448339663,
+        "NDCG@10": 0.00631315322048784,
+        "HitRate@10": 0.029447852760736196,
+        "Coverage": 0.9916765755053508,
+        "users": 815.0
+      }
+    ],
+    "paper_reported": {
+      "MSE": 0.349,
+      "RMSE": 0.591
+    }
+  },
+  "E2": {
+    "rating": [
+      {
+        "model": "RikoNet AE (tuned on validation)",
+        "config": "{\"hidden\": [256, 128], \"dropout\": 0.8, \"refeed\": true, \"l2\": 0.0001}",
+        "MSE": 0.8968674540519714,
+        "MSE_std": 0.002081598202312413,
+        "RMSE": 0.9470302240326324,
+        "RMSE_std": 0.0010994638117574162,
+        "MAE": 0.7458330988883972,
+        "MAE_std": 0.000895215954023343,
+        "runs": 3,
+        "best_epoch": 99.66666666666667
+      },
+      {
+        "model": "Global average",
+        "config": NaN,
+        "MSE": 1.2545156478881836,
+        "MSE_std": NaN,
+        "RMSE": 1.1200516273316081,
+        "RMSE_std": NaN,
+        "MAE": 0.9425653219223022,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "User average",
+        "config": NaN,
+        "MSE": 1.0790823698043823,
+        "MSE_std": NaN,
+        "RMSE": 1.0387888956878497,
+        "RMSE_std": NaN,
+        "MAE": 0.8327168226242065,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Item average",
+        "config": NaN,
+        "MSE": 1.0557079315185547,
+        "MSE_std": NaN,
+        "RMSE": 1.0274764870879307,
+        "RMSE_std": NaN,
+        "MAE": 0.8187738656997681,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Bias baseline (mu+b_u+b_i)",
+        "config": NaN,
+        "MSE": 0.8925547003746033,
+        "MSE_std": NaN,
+        "RMSE": 0.9447511314492316,
+        "RMSE_std": NaN,
+        "MAE": 0.7485016584396362,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "User KNN (cosine, k=40)",
+        "config": NaN,
+        "MSE": 0.9994143843650818,
+        "MSE_std": NaN,
+        "RMSE": 0.9997071493017752,
+        "RMSE_std": NaN,
+        "MAE": 0.7795038223266602,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Item KNN (cosine, k=40)",
+        "config": NaN,
+        "MSE": 0.9742113351821899,
+        "MSE_std": NaN,
+        "RMSE": 0.9870214461612219,
+        "RMSE_std": NaN,
+        "MAE": 0.7630922198295593,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Biased MF (ALS, f=32)",
+        "config": NaN,
+        "MSE": 0.8646125197410583,
+        "MSE_std": NaN,
+        "RMSE": 0.9298454278755466,
+        "RMSE_std": NaN,
+        "MAE": 0.7287736535072327,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      }
+    ],
+    "ranking": [
+      {
+        "model": "RikoNet AE (tuned on validation)",
+        "Precision@10": 0.04390681003584229,
+        "Recall@10": 0.03724443764635474,
+        "NDCG@10": 0.045968005800458074,
+        "HitRate@10": 0.3078853046594982,
+        "Coverage": 0.14526357510899723,
+        "users": 930.0
+      },
+      {
+        "model": "Global average",
+        "Precision@10": 0.017204301075268817,
+        "Recall@10": 0.014686785067083019,
+        "NDCG@10": 0.016149429975955025,
+        "HitRate@10": 0.14301075268817204,
+        "Coverage": 0.18549346016646848,
+        "users": 930.0
+      },
+      {
+        "model": "User average",
+        "Precision@10": 0.017204301075268817,
+        "Recall@10": 0.014686785067083019,
+        "NDCG@10": 0.016149429975955025,
+        "HitRate@10": 0.14301075268817204,
+        "Coverage": 0.18549346016646848,
+        "users": 930.0
+      },
+      {
+        "model": "Item average",
+        "Precision@10": 0.00021505376344086021,
+        "Recall@10": 0.00019502424625764283,
+        "NDCG@10": 0.00018714341718161287,
+        "HitRate@10": 0.002150537634408602,
+        "Coverage": 0.0089179548156956,
+        "users": 930.0
+      },
+      {
+        "model": "Bias baseline (mu+b_u+b_i)",
+        "Precision@10": 0.08526881720430107,
+        "Recall@10": 0.06047738158693856,
+        "NDCG@10": 0.09018842867955179,
+        "HitRate@10": 0.4376344086021505,
+        "Coverage": 0.021997621878715814,
+        "users": 930.0
+      },
+      {
+        "model": "User KNN (cosine, k=40)",
+        "Precision@10": 0.0070967741935483875,
+        "Recall@10": 0.005937095889919469,
+        "NDCG@10": 0.006739526153821623,
+        "HitRate@10": 0.06774193548387097,
+        "Coverage": 0.4512485136741974,
+        "users": 930.0
+      },
+      {
+        "model": "Item KNN (cosine, k=40)",
+        "Precision@10": 0.03129032258064516,
+        "Recall@10": 0.03372245401790805,
+        "NDCG@10": 0.03612996027455555,
+        "HitRate@10": 0.23978494623655913,
+        "Coverage": 0.6331747919143876,
+        "users": 930.0
+      },
+      {
+        "model": "Biased MF (ALS, f=32)",
+        "Precision@10": 0.09752688172043011,
+        "Recall@10": 0.07101206281588378,
+        "NDCG@10": 0.11277416764647737,
+        "HitRate@10": 0.47419354838709676,
+        "Coverage": 0.15279429250891796,
+        "users": 930.0
+      },
+      {
+        "model": "Most popular",
+        "Precision@10": 0.13301075268817206,
+        "Recall@10": 0.1381299540996844,
+        "NDCG@10": 0.175012867023364,
+        "HitRate@10": 0.6731182795698925,
+        "Coverage": 0.02794292508917955,
+        "users": 930.0
+      },
+      {
+        "model": "Random",
+        "Precision@10": 0.008172043010752689,
+        "Recall@10": 0.006194696611472561,
+        "NDCG@10": 0.009275658701662613,
+        "HitRate@10": 0.07741935483870968,
+        "Coverage": 0.995243757431629,
+        "users": 930.0
+      }
+    ]
+  },
+  "E3_movielens": {
+    "relu": {
+      "best_val_mse": 2.8833242007199478,
+      "best_epoch": 4
+    },
+    "tanh": {
+      "best_val_mse": 1.1139549272213025,
+      "best_epoch": 40
+    },
+    "elu": {
+      "best_val_mse": 1.2292133096277342,
+      "best_epoch": 34
+    },
+    "selu": {
+      "best_val_mse": 1.0132965755443508,
+      "best_epoch": 36
+    }
+  },
+  "runtime_minutes": 18.3,
+  "anime_stats": {
+    "raw_anime": 12294,
+    "raw_rows": 7813737,
+    "unscored_rows": 1476496,
+    "duplicates": 7,
+    "user_min_ratings": 121,
+    "users": 16384,
+    "items": 6668,
+    "ratings": 4355489,
+    "genres": 43,
+    "density": 0.0398677192051824,
+    "mean_rating": 7.6733299062401485
+  },
+  "E4": {
+    "rating": [
+      {
+        "model": "RikoNet AE (tuned on validation)",
+        "config": "{\"hidden\": [512, 512, 1024], \"dropout\": 0.5, \"refeed\": false, \"l2\": 0.0001}",
+        "MSE": 1.3774163722991943,
+        "MSE_std": 0.0,
+        "RMSE": 1.1736338322914837,
+        "RMSE_std": 0.0,
+        "MAE": 0.8923871517181396,
+        "MAE_std": 0.0,
+        "runs": 1,
+        "best_epoch": 16.0
+      },
+      {
+        "model": "Global average",
+        "config": NaN,
+        "MSE": 2.4522030353546143,
+        "MSE_std": NaN,
+        "RMSE": 1.5659511599518723,
+        "RMSE_std": NaN,
+        "MAE": 1.2356407642364502,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "User average",
+        "config": NaN,
+        "MSE": 1.843117117881775,
+        "MSE_std": NaN,
+        "RMSE": 1.357614495312191,
+        "RMSE_std": NaN,
+        "MAE": 1.0394123792648315,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Item average",
+        "config": NaN,
+        "MSE": 2.0389482975006104,
+        "MSE_std": NaN,
+        "RMSE": 1.4279174687287113,
+        "RMSE_std": NaN,
+        "MAE": 1.0981190204620361,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Bias baseline (mu+b_u+b_i)",
+        "config": NaN,
+        "MSE": 1.401005506515503,
+        "MSE_std": NaN,
+        "RMSE": 1.183640784408641,
+        "RMSE_std": NaN,
+        "MAE": 0.8946864008903503,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "User KNN (cosine, k=40)",
+        "config": NaN,
+        "MSE": 1.434647560119629,
+        "MSE_std": NaN,
+        "RMSE": 1.1977677404737652,
+        "RMSE_std": NaN,
+        "MAE": 0.8989808559417725,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Item KNN (cosine, k=40)",
+        "config": NaN,
+        "MSE": 1.137296199798584,
+        "MSE_std": NaN,
+        "RMSE": 1.066440903097112,
+        "RMSE_std": NaN,
+        "MAE": 0.7752951383590698,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      },
+      {
+        "model": "Biased MF (ALS, f=32)",
+        "config": NaN,
+        "MSE": 1.209908127784729,
+        "MSE_std": NaN,
+        "RMSE": 1.099958239109435,
+        "RMSE_std": NaN,
+        "MAE": 0.8150264024734497,
+        "MAE_std": NaN,
+        "runs": 1,
+        "best_epoch": NaN
+      }
+    ],
+    "ranking": [
+      {
+        "model": "RikoNet AE (tuned on validation)",
+        "Precision@10": 0.011104955370883348,
+        "Recall@10": 0.018444045690156508,
+        "NDCG@10": 0.014478469991478737,
+        "HitRate@10": 0.09849184364419822,
+        "Coverage": 0.09133173365326934,
+        "users": 16245.0
+      },
+      {
+        "model": "Global average",
+        "Precision@10": 0.004007386888273315,
+        "Recall@10": 0.005753372264269645,
+        "NDCG@10": 0.00505225084719636,
+        "HitRate@10": 0.03902739304401354,
+        "Coverage": 0.1234253149370126,
+        "users": 16245.0
+      },
+      {
+        "model": "User average",
+        "Precision@10": 0.004007386888273315,
+        "Recall@10": 0.005753372264269645,
+        "NDCG@10": 0.00505225084719636,
+        "HitRate@10": 0.03902739304401354,
+        "Coverage": 0.1234253149370126,
+        "users": 16245.0
+      },
+      {
+        "model": "Item average",
+        "Precision@10": 0.015223145583256386,
+        "Recall@10": 0.02280897190269372,
+        "NDCG@10": 0.017595982936122283,
+        "HitRate@10": 0.1358571868267159,
+        "Coverage": 0.008098380323935212,
+        "users": 16245.0
+      },
+      {
+        "model": "Bias baseline (mu+b_u+b_i)",
+        "Precision@10": 0.012446906740535548,
+        "Recall@10": 0.018871866314007207,
+        "NDCG@10": 0.014630133298676235,
+        "HitRate@10": 0.11271160357032933,
+        "Coverage": 0.009598080383923215,
+        "users": 16245.0
+      },
+      {
+        "model": "User KNN (cosine, k=40)",
+        "Precision@10": 0.0023945829485995693,
+        "Recall@10": 0.0033267963844606295,
+        "NDCG@10": 0.0027440201565622595,
+        "HitRate@10": 0.022899353647276084,
+        "Coverage": 0.6099280143971205,
+        "users": 16245.0
+      },
+      {
+        "model": "Item KNN (cosine, k=40)",
+        "Precision@10": 0.0043090181594336715,
+        "Recall@10": 0.006407286093430174,
+        "NDCG@10": 0.005156491653791172,
+        "HitRate@10": 0.04007386888273315,
+        "Coverage": 0.6825134973005399,
+        "users": 16245.0
+      },
+      {
+        "model": "Biased MF (ALS, f=32)",
+        "Precision@10": 0.023767313019390585,
+        "Recall@10": 0.0344812619415877,
+        "NDCG@10": 0.0323429776887532,
+        "HitRate@10": 0.19692212988611882,
+        "Coverage": 0.23110377924415118,
+        "users": 16245.0
+      },
+      {
+        "model": "Most popular",
+        "Precision@10": 0.06162511542012928,
+        "Recall@10": 0.08710365789380381,
+        "NDCG@10": 0.09191224753193161,
+        "HitRate@10": 0.43521083410280087,
+        "Coverage": 0.02054589082183563,
+        "users": 16245.0
+      },
+      {
+        "model": "Random",
+        "Precision@10": 0.0011942136041859035,
+        "Recall@10": 0.0015740517373875667,
+        "NDCG@10": 0.0014652689231403903,
+        "HitRate@10": 0.011819021237303785,
+        "Coverage": 0.9550089982003599,
+        "users": 16245.0
+      }
+    ]
+  },
+  "clustering": {
+    "n_clusters": 222,
+    "n_neighbors": 4,
+    "seconds": 11,
+    "top_users_m": 1025,
+    "embedding_dim": 64,
+    "size_min": 4,
+    "size_median": 20.0,
+    "size_max": 224,
+    "empty_clusters": 0,
+    "clusters_below_4": 0,
+    "silhouette_spectral": -0.006940152496099472,
+    "silhouette_kmeans": 0.033690497279167175,
+    "genre_jaccard_within_spectral": 0.29383835196495056,
+    "genre_jaccard_within_kmeans": 0.271962970495224,
+    "genre_jaccard_random_pairs": 0.10591746121644974,
+    "genre_jaccard_title_vs_opposite": 0.03407987207174301,
+    "genre_jaccard_title_vs_random": 0.10623983293771744,
+    "opposite_cluster_equals_own": 0.00029994001199760045
+  },
+  "hybrid_filter": {
+    "Autoencoder top-10 (no filter)": {
+      "Precision@10": 0.011332717759310558,
+      "Recall@10": 0.018684298363163564,
+      "HitRate@10": 0.10058479532163743,
+      "users": 16245,
+      "genre_jaccard_to_context": 0.12961481469097152
+    },
+    "Hybrid: Similar Anime": {
+      "Precision@10": 0.019636811326562018,
+      "Recall@10": 0.029112611977078724,
+      "HitRate@10": 0.1716220375500154,
+      "users": 16245,
+      "genre_jaccard_to_context": 0.16085540955852135,
+      "mean_list_length": 9.99661434287473,
+      "mean_candidate_set_C": 121.44973838104032
+    },
+    "Hybrid: Anime You May Like": {
+      "Precision@10": 0.010864881502000616,
+      "Recall@10": 0.017810334290410294,
+      "HitRate@10": 0.09695290858725762,
+      "users": 16245,
+      "genre_jaccard_to_context": 0.1286698048593228
+    },
+    "Hybrid: both lists (20 titles)": {
+      "Precision@20": 0.015250846414281318,
+      "Recall@20": 0.04692294626748902,
+      "HitRate@20": 0.2505386272699292,
+      "users": 16245
+    }
+  },
+  "example_user_kaggle_id": 7
+}
